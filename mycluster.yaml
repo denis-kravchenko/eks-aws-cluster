@@ -1,0 +1,20 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name:denis-super-cluster
+  region: eu-west-2
+  
+vpc:
+	subnets:
+		pritave:
+			eu-west-2a: {id: subnet-0ffadvit300tc}
+			eu-west-2a: {id: subnet-0534the5cf03}
+			eu-west-2a: {id: subnet-042best32184}
+
+nodeGroups:
+	- name				: worker-nodes-group-1
+	  instanceType		: m5.large
+	  desiredCapacity	: 2
+	  instanceType		: r5.large
+	  desiredCapacity	: 2
