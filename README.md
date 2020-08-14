@@ -13,7 +13,7 @@ EKSCTL - for creating k8s clusters
 *After that we are opening your Terminal and typing a command for a creating cluster on AWS. 
 - eksctl create cluster --name(here we type a name of your cluster if we need a specific name, or it can be by default"
 
-Here some commands to work with a cluster:
+*Here some commands to work with a cluster:
 
 - kubectl cluster-info (for getting information about our cluster)
 - kubectl cluster-info dump (for debugging and diagnosing problems)
